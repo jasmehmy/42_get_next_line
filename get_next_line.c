@@ -48,7 +48,7 @@ char	*get_next_line(int fd)
 	//	< /dev/urandom | tr -dc 'a-zA-Z0-9')\" > long_test1.txt";
 	//system(long);
 	//system("echo \"hello\\n\" > test1.txt");
-	fd = ("test1.txt", O_RDONLY);
+	fd = open("test1.txt", O_RDONLY);
 	
 	if (fd == -1)
 		perror ("error");
